@@ -82,7 +82,7 @@ function settings = initSettings()
     % It is single sideband, so the whole search band is tiwce of it.
     settings.acqSearchBand = 8000; %[Hz]
     % Threshold for the signal presence decision rule
-    settings.acqThreshold = 1.4;
+    settings.acqThreshold = 1.5;
     % Sampling rate threshold for downsampling
     settings.resamplingThreshold = 8e6; % [Hz]
     % Enable/dissable use of downsampling for acquisition
@@ -90,12 +90,12 @@ function settings = initSettings()
     % 1 - On
     %% Tracking loops settings ================================================
     % Code tracking loop parameters
-    settings.dllDampingRatio = 0.707; ;
+    settings.dllDampingRatio = 0.707;;
     settings.dllNoiseBandwidth = 1.5; %[Hz]
     settings.dllCorrelatorSpacing = 0.5; %[chips]
 
     % Carrier tracking loop parameters
-    settings.pllDampingRatio = 0.707; 
+    settings.pllDampingRatio = 0.707;
     settings.pllNoiseBandwidth = 25; %[Hz]
     % Integration time for DLL and PLL
     settings.intTime = 0.001; %[s]
